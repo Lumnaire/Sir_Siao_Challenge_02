@@ -794,11 +794,30 @@ hr{
 
   #hero img{
     height: 90vh;
-    border: 3px inset black;
+    border: 3px solid rgb(40, 40, 40);
     width: 200px;
     height: 200px;
     background-color: transparent;
     border-radius: 100%;
+    position: relative;
+    background: repeating-conic-gradient(from var(--a), #3c31dd 0%, #3c31dd 5%, transparent 5%,
+    transparent 40%, #3c31dd 100%);
+    animation: animate 5s linear infinite;
+  }
+
+  @property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  @keyframes animate{
+    0%{
+      --a: 0deg
+    }
+    100%{
+      --a: 360deg
+    }
   }
 
   #header{
@@ -925,11 +944,29 @@ hr{
 
   #hero img{
     height: 90vh;
-    border: 3px inset black;
+    border: 3px solid rgb(40,40,40);
     width: 200px;
     height: 200px;
     background-color: transparent;
     border-radius: 100%;
+    position: relative;
+    background: repeating-conic-gradient(from var(--a), #3c31dd 0%, #3c31dd 5%, transparent 5%,
+    transparent 40%, #3c31dd 100%);
+    animation: animate 5s linear infinite;
+  }
+   @property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  @keyframes animate{
+    0%{
+      --a: 0deg
+    }
+    100%{
+      --a: 360deg
+    }
   }
 
   #hero h1 {
@@ -1076,13 +1113,32 @@ hr{
 
   #hero img {
     height: 90vh;
-    border: 3px inset black;
+    border: 3px solid rgb(40, 40, 40);
     width: 200px;
     height: 200px;
     background-color: transparent;
     border-radius: 100%;
-    
+    position: relative;
+    background: repeating-conic-gradient(from var(--a), #3c31dd 0%, #3c31dd 5%, transparent 5%,
+    transparent 40%, #3c31dd 100%);
+    animation: animate 5s linear infinite;
   }
+
+  @property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  @keyframes animate{
+    0%{
+      --a: 0deg
+    }
+    100%{
+      --a: 360deg
+    }
+  }
+  
   #hero .hero-right {
     width: 100%;
     display: flex;
